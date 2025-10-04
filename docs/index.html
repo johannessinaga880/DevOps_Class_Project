@@ -1,11 +1,99 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>DevOps Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Tambah CSS sederhana -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #f8f9fa;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      max-width: 900px;
+    }
+    .intro {
+      background: #e9ecef;
+      padding: 15px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    .post {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+    .post h2 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    .post small {
+      color: #666;
+    }
+    .tags span {
+      background: #007bff;
+      color: white;
+      padding: 3px 8px;
+      border-radius: 5px;
+      font-size: 0.8rem;
+      margin-right: 5px;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #f8f9fa;
+      border-top: 1px solid #ddd;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
-  <h1>Latihan 2 - DevOps Blog</h1>
-  <p>Berikut adalah kalimat pertama dari halaman web.</p>
+  <!-- Header -->
+  <header>
+    <h1>DevOps Blog</h1>
+  </header>
+
+  <!-- Konten -->
+  <div class="container">
+    <div class="intro">
+      Start DevOps journey now!
+    </div>
+
+    <div class="post">
+      <h2>First Kubernetes Deployment</h2>
+      <small>📅 Posted on February 1, 2019 by Onur Yilmaz</small>
+      <p>First application on Kubernetes using Kubernetes deployments</p>
+      <div class="tags">
+        <span>#kubernetes</span>
+        <span>#code</span>
+      </div>
+      <p><a href="#">[Read More]</a></p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Onur Yilmaz © 2019 - DevOps Blog<br>
+    Hugo v0.55.0-DEV powered • Theme by Beautiful Jekyll adapted to Beautiful Hugo</p>
+  </footer>
 </body>
 </html>
