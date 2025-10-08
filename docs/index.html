@@ -4,60 +4,49 @@
   <meta charset="utf-8">
   <title>DevOps Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Tambah CSS sederhana -->
   <style>
     body {
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      margin: 0;
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
       background: #fff;
       color: #333;
-    }
-    nav {
-      background: #f8f9fa;
-      padding: 10px 20px;
-      font-weight: bold;
-    }
-    nav a {
-      text-decoration: none;
-      color: #00aaff;
-      font-size: 1rem;
+      line-height: 1.6;
     }
     header {
+      background: #f8f9fa;
+      padding: 20px;
       text-align: center;
-      padding: 40px 20px 10px;
+      border-bottom: 1px solid #ddd;
     }
     header h1 {
-      font-size: 3rem;
       margin: 0;
-      font-weight: 700;
-      text-decoration: underline;
-    }
-    .intro {
-      background: #f1f1f1;
-      padding: 15px;
-      margin: 20px auto;
-      text-align: center;
-      width: 60%;
-      font-weight: bold;
-      font-size: 1.2rem;
-      border-radius: 5px;
+      font-size: 2.5rem;
     }
     .container {
-      width: 70%;
-      max-width: 900px;
+      width: 80%;
       margin: 20px auto;
+      max-width: 900px;
+    }
+    .intro {
+      background: #e9ecef;
+      padding: 15px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    .post {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
     }
     .post h2 {
       margin: 0;
       font-size: 1.8rem;
-      font-weight: bold;
     }
-    .meta {
+    .post small {
       color: #666;
-      font-size: 0.9rem;
-      margin-bottom: 5px;
-    }
-    .meta i {
-      margin-right: 5px;
     }
     .tags span {
       background: #007bff;
@@ -67,63 +56,44 @@
       font-size: 0.8rem;
       margin-right: 5px;
     }
-    .readmore {
-      font-weight: bold;
-      text-decoration: none;
-      color: #000;
-    }
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 15px;
       background: #f8f9fa;
-      color: #555;
-      font-size: 0.9rem;
-      margin-top: 30px;
       border-top: 1px solid #ddd;
+      font-size: 0.9rem;
+      color: #555;
     }
   </style>
-  <!-- gunakan icon font-awesome (optional, CDN) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
-  <!-- Navbar -->
-  <nav>
-    <a href="#">DevOps Blog</a>
-  </nav>
-
   <!-- Header -->
   <header>
     <h1>DevOps Blog</h1>
   </header>
 
-  <!-- Intro -->
-  <div class="intro">
-    Start DevOps journey now!
-  </div>
-
   <!-- Konten -->
   <div class="container">
+    <div class="intro">
+      Start DevOps journey now!
+    </div>
+
     <div class="post">
       <h2>First Kubernetes Deployment</h2>
-      <p class="meta">
-        <i class="fa-regular fa-calendar"></i> Posted on February 1, 2019 &nbsp; | &nbsp;
-        <i class="fa-regular fa-user"></i> Onur Yilmaz
-      </p>
+      <small>📅 Posted on February 1, 2019 by Onur Yilmaz</small>
       <p>First application on Kubernetes using Kubernetes deployments</p>
       <div class="tags">
         <span>#kubernetes</span>
         <span>#code</span>
       </div>
-      <p><a href="#" class="readmore">[Read More]</a></p>
+      <p><a href="#">[Read More]</a></p>
     </div>
   </div>
 
   <!-- Footer -->
   <footer>
-    Onur Yilmaz © 2019 – DevOps Blog <br>
-    Hugo v0.55.0-DEV powered • Theme by Beautiful Jekyll adapted to Beautiful Hugo
+    <p>Onur Yilmaz © 2019 - DevOps Blog<br>
+    Hugo v0.55.0-DEV powered • Theme by Beautiful Jekyll adapted to Beautiful Hugo</p>
   </footer>
-
 </body>
 </html>
